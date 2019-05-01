@@ -12,7 +12,11 @@ public class HomeActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        Bundle extras = getIntent().getExtras();
+        String emailUsuario = extras.getString("valorEmail");
+
         textEmail = findViewById(R.id.textViewEmail);
-        textEmail.setText("Bienvenido");
+        textEmail.setText("Bienvenido : "+ emailUsuario);
     }
 }

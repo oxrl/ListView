@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                intentLogin.putExtra("valorEmail",email);
                startActivity(intentLogin);
            }
+           else {
+               editTextEmail.setError("Complete el email y el contraseña");
+           }
 
 
        }
